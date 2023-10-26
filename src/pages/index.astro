@@ -5,6 +5,8 @@ import Card from "../components/Card.astro";
 import { Image } from "astro:assets";
 
 import NarutoImage2 from "../../public/images/naruto01.jpg";
+import Kinoko from "../../public/images/1up_kinoko.png";
+
 import KaijiImage from "../../src/images/kaiji01.png";
 import JojoImage from "../../src/images/jojo01.jpeg";
 import NarutoImage from "../images/naruto01.jpg";
@@ -17,6 +19,7 @@ import NarutoImage from "../images/naruto01.jpg";
         <Card imageUrl={JojoImage.src} imageDiscription="ジョジョの画像" />
         <Card imageUrl={NarutoImage.src} imageDiscription="ナルトの画像" />
     </ul>
+    <Card imageUrl={Kinoko.src} imageDiscription="ナルトの画像" />
     <Image src={NarutoImage2} alt="説明文" />
 </Layout>
 
