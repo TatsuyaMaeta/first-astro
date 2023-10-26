@@ -1,23 +1,16 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
-import KaijiImage from "../src/images/kaiji01.png";
+import KaijiImage from "../../src/images/kaiji01.png";
+import JojoImage from "../../src/images/jojo01.jpeg";
+import NarutoImage from "../../src/images/naruto01.jpg";
 ---
 
 <Layout title="First Astro">
     <ul role="list" class="link-card-grid">
-        <Card
-            imageUrl="../src/images/kaiji01.png"
-            imageDiscription="カイジの画像"
-        />
-        <Card
-            imageUrl="../src/images/jojo01.jpeg"
-            imageDiscription="ジョジョの画像"
-        />
-        <Card
-            imageUrl="../src/images/naruto01.jpg"
-            imageDiscription="ナルトの画像"
-        />
+        <Card imageUrl={KaijiImage.src} imageDiscription="カイジの画像" />
+        <Card imageUrl={JojoImage.src} imageDiscription="ジョジョの画像" />
+        <Card imageUrl={NarutoImage.src} imageDiscription="ナルトの画像" />
     </ul>
 </Layout>
 
