@@ -4,7 +4,7 @@ import Card from "../components/Card.astro";
 
 import { Image } from "astro:assets";
 
-import NarutoImage2 from "../../public/images/naruto01.jpg";
+import NarutoImagePub from "../../public/images/naruto01.jpg";
 import Kinoko from "../../public/images/1up_kinoko.png";
 
 import KaijiImage from "../../src/images/kaiji01.png";
@@ -17,11 +17,11 @@ import NarutoImage from "../images/naruto01.jpg";
     <ul role="list" class="link-card-grid">
         <Card imageUrl={KaijiImage.src} imageDiscription="カイジの画像" />
         <Card imageUrl={JojoImage.src} imageDiscription="ジョジョの画像" />
-        <Card imageUrl={NarutoImage.src} imageDiscription="ナルトの画像" />
+        <Card imageUrl={NarutoImagePub.src} imageDiscription="ナルトの画像" />
     </ul>
-    <img src="images/1up_kinoko.png" alt="" srcset="">
+    <img src="images/1up_kinoko.png" alt="publicのpathで通っているキノコ" srcset="">
     <Card imageUrl={Kinoko.src} imageDiscription="ナルトの画像" />
-    <Image src={NarutoImage2} alt="説明文" />
+    <Image src={NarutoImagePub} alt="説明文" />
 </Layout>
 
 <style>
